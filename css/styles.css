@@ -737,8 +737,30 @@ address {
 	border-radius: 4px;
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-close-batton {
+	position: relative;
+}
 .close-button {
-	padding: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-top: 8px;
+	margin-right: 8px;
+	background-color: var(--white-color);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-button-svg {
+	fill: #000000;
+}
+.close-button-svg:hover,
+.close-button-svg:focus {
+	fill: var(--accent-color);
+	border-radius: var(--accent-color);
 }
 
 .is-hidden {
@@ -747,4 +769,26 @@ address {
 }
 .is-hidden .modal {
 	transform: translate(-200%);
+}
+
+.modal-form-title {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.modal-form {
+	display: flex;
+	flex-direction: column;
+	width: 448px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 40px;
+}
+
+.modal-form-list {
+	margin-bottom: 28px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}
+textarea {
+	resize: none;
 }
