@@ -369,7 +369,7 @@
 		</main>
 
 		<footer class="box">
-			<div class="container footer">
+			<div class="footer container">
 				<div class="box-address">
 					<a href="" lang="en" class="logo-footer"><span class="logo-accent">Web</span>Studio</a>
 					<address class="address">
@@ -421,6 +421,20 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer-chek-box">
+					<b class="join-box">Подпишитесь на рассылку</b>
+
+					<form class="js-speaker-form">
+						<label for="e-mail"></label>
+						<input class="mail-form" type="email" name="e-mail" id="e-mail" placeholder="E-mail" />
+						<button class="footer-button" type="submit">
+							Подписаться
+							<svg class="icon-send-svg" width="24" height="24">
+								<use href="./images/sprite.svg#icon-send"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
 			</div>
 		</footer>
 
@@ -430,5 +444,16 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script>
+			;(() => {
+				document.querySelector(".js-speaker-form").addEventListener("submit", (e) => {
+					e.preventDefault()
+
+					new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`))
+
+					e.currentTarget.reset()
+				})
+			})()
+		</script>
 	</body>
 </html>
