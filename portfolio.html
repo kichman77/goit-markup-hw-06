@@ -295,5 +295,22 @@
 				</div>
 			</div>
 		</footer>
+		<div data-modal class="backdrop is-hidden">
+			<div class="modal">
+				<button data-modal-close class="close-button">Закрыть</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
+		<script>
+			;(() => {
+				document.querySelector(".js-speaker-form").addEventListener("submit", (e) => {
+					e.preventDefault()
+
+					new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`))
+
+					e.currentTarget.reset()
+				})
+			})()
+		</script>
 	</body>
 </html>
