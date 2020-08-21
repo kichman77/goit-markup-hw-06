@@ -575,6 +575,7 @@ address {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border: 0;
+	cursor: pointer;
 }
 
 .icon-send-svg {
@@ -600,6 +601,7 @@ address {
 	font-size: 16px;
 	line-height: 1.62;
 	letter-spacing: 0.03em;
+	cursor: pointer;
 }
 
 /* portfolio page */
@@ -747,17 +749,20 @@ address {
 	margin-right: 8px;
 	background-color: var(--white-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	cursor: pointer;
 }
 
 .close-button-svg {
 	fill: #000000;
 }
-.close-button-svg:hover,
-.close-button-svg:focus {
-	fill: var(--accent-color);
-	border-radius: var(--accent-color);
+
+.close-button:hover {
+	border-color: var(--accent-color);
 }
 
+.close-button:hover .close-button-svg {
+	fill: var(--accent-color);
+}
 .is-hidden {
 	opacity: 0;
 	pointer-events: none;
@@ -828,6 +833,7 @@ textarea {
 	padding-left: 16px;
 	color: rgba(117, 117, 117, 0.5);
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	cursor: pointer;
 }
 
 input {
@@ -843,6 +849,7 @@ input {
 	padding-left: 48px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .modal-form-batton {
@@ -861,4 +868,5 @@ input {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	border: 0;
+	cursor: pointer;
 }
