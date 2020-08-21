@@ -448,21 +448,31 @@
 						</button>
 					</div>
 					<h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-					<form class="modal-form">
+					<form class="modal-form" autocomplete="off">
 						<div class="modal-form-list">
 							<label class="modal-form-item" for="name">Имя </label>
-							<input type="text" name="name" />
+							<svg class="modal-svg" width="12" height="12">
+								<use href="./images/sprite.svg#icon-vector-name"></use>
+							</svg>
+							<input class="modal-form-text" type="text" id="name" />
 						</div>
 						<div class="modal-form-list">
 							<label class="modal-form-item" for="tel">Телефон</label>
-							<input class="modal-form-text" type="text" name="tel" />
+							<svg class="modal-svg" width="12" height="12">
+								<use href="./images/sprite.svg#icon-vector--phone"></use>
+							</svg>
+							<input class="modal-form-text" type="text" id="tel" />
 						</div>
 						<div class="modal-form-list">
 							<label class="modal-form-item" for="mail">Почта</label>
-							<input type="text" name="mail" />
+							<svg class="modal-svg" width="12" height="12">
+								<use href="./images/sprite.svg#icon-vector-mail"></use>
+							</svg>
+							<input class="modal-form-text" type="text" id="mail" />
 						</div>
-						<label for="coment"></label>
-						<textarea name="coment" id="coment" rows="10">Коментарий</textarea>
+						<label for="coment">Коментарий</label>
+						<textarea placeholder="Введите текст" class="modal-textarea" name="coment" id="coment" rows="10"></textarea>
+						<button class="modal-form-batton">Отправить</button>
 					</form>
 				</div>
 			</div>
