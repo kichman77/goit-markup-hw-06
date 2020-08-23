@@ -892,8 +892,8 @@ input {
 
 .modal-form-label::before {
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 1px;
+	top: 1px;
 	content: "";
 	display: block;
 	width: 16px;
@@ -918,6 +918,7 @@ input {
 	height: 15px;
 	left: 1px;
 	top: 1px;
+	border-radius: 2px;
 	fill: var(--white-color);
 }
 
